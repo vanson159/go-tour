@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -26,8 +25,7 @@ func (f AppFloat) Abs() float64 {
 	return float64(f)
 }
 
-// pointer reveiver
-// modify receiver
+// pointer reveiver (modify receiver)
 func (v *Vertex) Scale(f float64) {
 	v.X = v.X * f
 	v.Y = v.Y * f
@@ -44,7 +42,7 @@ func main() {
 
 	// function that take a value argument must take a value of that specific type
 	AbsFunc(v)
-	// while methos with value receivers take either a value or a pointer as the receiver when they are called
+	// while methods with value receivers take either a value or a pointer as the receiver when they are called
 	v.Abs()
 	p.Abs()
 
@@ -55,5 +53,4 @@ func main() {
 	// func with pointer argument must take a pointer
 	ScaleFunc(&v, 2)
 
-	fmt.Println(v.Abs())
 }
