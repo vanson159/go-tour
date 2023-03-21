@@ -67,6 +67,7 @@ func main() {
 	describe_empty_interface(i)
 	i = 42
 	describe_empty_interface(i)
+
 }
 
 func describe(i Abser) {
