@@ -38,7 +38,6 @@ func main() {
 	// A value of interface type can hold any value that implements methods signarutes
 	a = f
 	describe(a)
-	describe(a)
 	a = &v
 	describe(a)
 
